@@ -27,7 +27,12 @@ A premium, production-ready React application for building chatbot conversationa
 - Select any Text Node on the canvas and click "**✨ Auto-Suggest Reply**". 
 - The system traverses the graph backwards to read the parent node's context and generates a contextual AI response automatically to speed up flow generation.
 
-### 5. Premium UI/UX Polish 💅
+### 5. Download Canvas as Image 📸
+- **High-Quality Export**: Click the "**Export PNG**" button in the header to instantly generate a portable image of your flow.
+- **Perfect Framing**: Uses `getNodesBounds` to precisely capture the entire graph, regardless of your current pan or zoom level.
+- **Robust Rendering**: Employs the `html-to-image` engine targeting the native React Flow viewport to capture an exact, styled replica of the canvas with a solid background.
+
+### 6. Premium UI/UX Polish 💅
 - **Aesthetics:** Styled with modern consumer-grade visuals using Tailwind CSS. Soft dropshadows, distinct Node Headers, smooth border-radiuses.
 - **Animated Edges:** Employs React Flow's `smoothstep` bezier curves with animated marching dashes to simulate data flow.
 - **Interactive:** Hover states, drag indicators, and central empty-state overlays provide clear user cues.
@@ -65,6 +70,7 @@ The optimized bundle will be generated in the `/dist` directory.
 ## Tech Stack 🛠️
 - **React 18** (Vite Bootstrapped)
 - **React Flow** (Core Drag & Drop Node Visualizer)
+- **html-to-image** (DOM to PNG conversion)
 - **Tailwind CSS** (Utility First Styling)
 - **Lucide React** (Premium Iconography)
 - **React Hot Toast** (Notifications)
@@ -77,6 +83,7 @@ src/
 ├── utils/
 │   ├── graphValidation.js    // DFS Graph Cycle Detection 
 │   ├── graphUtils.js         // Graph Traversal AI Helpers
+│   ├── downloadImage.js      // Canvas Export Utility
 │   └── aiService.js          // Mock LLM Endpoint
 ├── App.jsx                   // Main Application & Canvas Provider
 ├── Header.jsx                // Top bar, Save logic & Validation hooks
