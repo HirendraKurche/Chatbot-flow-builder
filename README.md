@@ -1,5 +1,9 @@
 # React Flow Chatbot Builder 🤖✨
 
+[![Deploy Status](https://img.shields.io/badge/Deployed_on-Vercel-black?logo=vercel)](https://chatbot-flow-builder-gold.vercel.app/)
+&nbsp;&nbsp;&nbsp;
+[**👉 Try the Live Demo here! 🚀**](https://chatbot-flow-builder-gold.vercel.app/)
+
 A premium, production-ready React application for building chatbot conversational flows. Built with **React Flow**, **Tailwind CSS**, and **Vite**.
 
 ![Project Showcase](./assets/screenshot1.png)
